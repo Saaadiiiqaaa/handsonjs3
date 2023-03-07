@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./file2.css">
+</head>
+<body>
+    <h1 class="h1">ITERATION STATEMENTS</h1>
+    <p >1. FIND THE NUMBER OF DIGITS</p>
+    <div>
+    <pre>
+    const Find_Digits = (N) => 
+        {
+          let ans=0;
+             while(N!==0){
+               ans++;
+              N= Math.floor(N/10)
+              
+             }
+             return ans; 
+        };
+    </pre>
+   </div>
+   <p>2. FIND SUM OF N EVEN INTEGERS</p>
+   <div>
+     <Pre>
+    
+   const findSum = (n) => {
+    let ans=0;
+      for (i=1; i<=n; i++){
+        if(i%2===0){
+          ans=ans+i;
+        }
+        
+      }
+      return ans;
+  };
+  </Pre>
+</div>
+
+<P> 3. Print the odd numbers from given integer</P>
+<div>
+    <pre>
+        const Print_Odd = (N) => 
+        {
+             let ans=0
+             console.log(2)
+             for(i=2;i<=N;i++){
+               if(i%2===1){
+                 console.log(i)
+               }
+             }
+        };
+        
+    </pre>
+</div>
+
+<P>4. CHECK IF THE NUMBER IS PRIME OR NOT</P>
+<div>
+    <pre>
+        
+        const Prime_Check = (N) => 
+        {
+             let factor=0
+             for(i=1;i<=N;i++){
+               if(N%i===0){
+                 factor++
+               }
+             }
+             if(factor===2){
+               return "YES"
+             }
+             else
+             return "NO"
+            
+        };
+</pre>
+</div>
+<P>5. Find the digits sum of a number</P>
+<div>
+    <pre>
+        const Number_Sum = (N) => 
+        {
+            let ans=0
+             while(N!==0){
+             ans +=N%10
+             N=Math.floor(N/10)
+             }
+             return ans
+        };
+        
+        
+     </pre>
+</div>
+
+<P>6.Print the Odds.</P>
+<div>
+    <pre>
+      const Print_Odd = (N) => 
+      {
+         let ans=0
+         console.log(2)
+         for(i=2;i<=N;i++){
+           if(i%2===1){
+             console.log(i)
+           }
+         }
+      };
+    </pre>
+</div>
+
+<P>7. Print pattern</P>
+<div>
+    <pre>
+        
+      const Print_pattern = (N) => 
+{
+  let a="";
+for(let row=1;row<=N;row++){
+  for(let col=1;col<=row;col++){
+    a+="*";
+  }
+  a+="\n";
+}
+console.log(a);
+};
+    </pre>
+</div>
+
+<p>8. CHECK IF THE NUMBER IS PRIME OR NOT</p>
+<div>
+    <pre>
+        
+const Prime_Check = (N) => 
+{
+	 let factor=0
+	 for(i=1;i<=N;i++){
+	   if(N%i===0){
+	     factor++
+	   }
+	 }
+	 if(factor===2){
+	   return "YES"
+	 }
+	 else
+	 return "NO"
+	
+};
+
+        
+        </pre>
+</div>
+<p>9. PRINT NUMBERS</p>
+<div>
+    <pre>
+        
+const printNumbers = (n) => {
+  for(i=1;i<=n;i++){
+      console.log(i)
+    }
+};
+        </pre>
+</div>
+
+<P>10. PRINT TABLES</P>
+<div>
+
+<pre>
+  const Print_Table = (N) => 
+{
+
+	for(i=1;i<=10;i++){
+	  
+	  console.log( N +" * "+ i +' = '+ N*i);
+	}
+};
+</pre>
+</div>
+</body>
+</html>
